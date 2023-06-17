@@ -12,8 +12,11 @@ console.log("Successfully connected to game server");
 
   conn.on("connect", () => {
     conn.write("Name: ASH");
+    // setInterval(() => {
+    //   conn.write("Move: up")
+    //   , 2000});
   });
-  
+
 
   //for the event data passes data to console log
   conn.on("data", (data) => {
